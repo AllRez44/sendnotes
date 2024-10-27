@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('title');
             $table->text('body');
             $table->date('send_date');
-            $table->boolean('is_published');
-            $table->integer('heart_count');
+            $table->boolean('is_published')->default(false);
+            $table->integer('heart_count')->default(0);
             $table->timestamps();
         });
     }

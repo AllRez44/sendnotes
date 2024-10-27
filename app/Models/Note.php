@@ -10,7 +10,7 @@ class Note extends Model
     use HasUuids;
 
     protected $guarded = [
-        "id",
-        "created_at",
+        'id',
+        'created_at',
     ];
 }
